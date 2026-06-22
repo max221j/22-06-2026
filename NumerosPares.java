@@ -1,11 +1,17 @@
 public class NumerosPares {
     public static void main(String[] args) {
 
-        for (int i = 1; i <= 100; i++) {
-            if (i % 2 == 0) {
-                System.out.println(i);
-            }
-        }
+        int numero = 1;
 
+        do {
+            if (numero % 2 != 0) { // Si es impar
+                numero++;
+                continue;
+            }
+
+            System.out.println(numero);
+            numero++;
+
+        } while (numero <= 100);
     }
 }
